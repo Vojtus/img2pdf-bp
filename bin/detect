@@ -1,0 +1,4 @@
+#! /bin/bash
+
+echo "img2pdf"
+exit 0
