@@ -3,9 +3,6 @@
 BUILD_DIR=$1
 CACHE_DIR=$2
 
-echo $BUILD_DIR
-echo $CACHE_DIR
-
 APT_CACHE_DIR="$CACHE_DIR/apt/cache"
 APT_STATE_DIR="$CACHE_DIR/apt/state"
 APT_SOURCELIST_DIR="$CACHE_DIR/apt/sources"   # place custom sources.list here
@@ -26,5 +23,8 @@ APT_OPTIONS="$APT_OPTIONS -o dir::etc::sourcelist=$APT_SOURCES -o dir::etc::sour
 apt-get $APT_OPTIONS update
 
 apt-get $APT_OPTIONS -y $APT_FORCE_YES -d install --reinstall python3 python3-pip
+
+echo $PATH
+
 pip3 install img2pdf
 
