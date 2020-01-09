@@ -61,7 +61,7 @@ pip install --user img2pdf
 
 mv $(which img2pdf) $BUILD_DIR/.apt/usr/share/img2pdf
 
-find / -type d -name "img2pdf"
+find / -type d -name "*img2pdf*"
 
 # pip3 install --target /app/bin img2pdf
 
