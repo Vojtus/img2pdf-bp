@@ -44,13 +44,13 @@ pwd
 
 # $BUILD_DIR
 
-# curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-# PATH=/app/.local/bin:$PATH
-# python3  get-pip.py --user --force-reinstall
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+PATH=/app/.local/bin:$PATH
+python3  get-pip.py --user --force-reinstall
 
 # pip3 install --target /app/bin img2pdf
 
-apt update && apt install python3-pip
+
 wget https://github.com/josch/img2pdf/archive/0.1.5.tar.gz
 
 tar -xzf 0.1.5.tar.gz
