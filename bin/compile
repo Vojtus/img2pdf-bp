@@ -38,7 +38,7 @@
 
 echo $PATH
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3 --user get-pip.py --force-reinstall
+python3 get-pip.py --user --force-reinstall
 
 pip3 install --user img2pdf
 
