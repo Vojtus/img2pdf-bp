@@ -46,18 +46,18 @@ whoami
 pwd
 
 
-find / -type d -name "*python*"
+# find / -type d -name "*python*"
 # $BUILD_DIR
 
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
-python3 get-pip.py 
+python3 get-pip.py --user
 # PYTHONPATH=$BUILD_DIR/.apt/python3
 
 #$PATH=$PATH:$BUILD_DIR/.apt
 
 
-pip install img2pdf
+pip install --user img2pdf
 
 # pip3 install --target /app/bin img2pdf
 
