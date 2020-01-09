@@ -37,6 +37,8 @@ CACHE_DIR=$2
 # done
 
 echo $PATH
+echo $BUILD_DIR
+echo $CACHE_DIR
 
 whoami
 
@@ -50,6 +52,10 @@ python3  get-pip.py --user --force-reinstall
 
 # pip3 install --target /app/bin img2pdf
 
+wget https://github.com/josch/img2pdf/archive/0.1.5.tar.gz
 
+tar -xvf 0.1.5.tar.gz
 
-pip3 install -t /app/bin img2pdf
+mkdir $BUILD_DIR/img2pdf
+
+pip3 install -t $BUILD_DIR/img2pdf img2pdf-0.1.5.tar.gz
