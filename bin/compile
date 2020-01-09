@@ -51,9 +51,10 @@ find / -type d -name "*python*"
 
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
+python3 get-pip.py 
 # PYTHONPATH=$BUILD_DIR/.apt/python3
 
-$PATH=$PATH:$BUILD_DIR/.apt
+#$PATH=$PATH:$BUILD_DIR/.apt
 
 
 pip install img2pdf
