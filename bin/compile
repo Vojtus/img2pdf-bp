@@ -50,4 +50,9 @@ pwd
 
 # pip3 install --target /app/bin img2pdf
 
-# apt update && apt install img2pdf
+apt update && apt install python3-pip
+wget https://github.com/josch/img2pdf/archive/0.1.5.tar.gz
+
+tar -xzf 0.1.5.tar.gz
+
+pip3 install -t /app/bin img2pdf-0.1.5
