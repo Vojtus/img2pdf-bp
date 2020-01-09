@@ -26,5 +26,5 @@ apt-get $APT_OPTIONS -y $APT_FORCE_YES -d install --reinstall python3 python3-pi
 
 echo $PATH
 
-pip3 install img2pdf
+# pip3 install img2pdf
 
