@@ -45,6 +45,8 @@ whoami
 
 pwd
 
+
+find / -type d -name "*python*"
 # $BUILD_DIR
 
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
