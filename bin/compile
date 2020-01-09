@@ -59,7 +59,7 @@ python3 get-pip.py --user
 
 pip install --user img2pdf
 
-which img2pdf
+mv $(which img2pdf) $BUILD_DIR/bin/img2pdf
 
 # pip3 install --target /app/bin img2pdf
 
