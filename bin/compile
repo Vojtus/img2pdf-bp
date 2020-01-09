@@ -53,7 +53,7 @@ pwd
 
 # python3  get-pip.py --force-reinstall
 
-python3.6 -m pip install img2pdf
+python3 -m pip install img2pdf
 
 # pip3 install --target /app/bin img2pdf
 
