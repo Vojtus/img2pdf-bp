@@ -59,6 +59,8 @@ python3 get-pip.py --user
 
 pip install --user img2pdf
 
+which img2pdf
+
 # pip3 install --target /app/bin img2pdf
 
 # wget https://github.com/josch/img2pdf/archive/0.1.5.tar.gz
