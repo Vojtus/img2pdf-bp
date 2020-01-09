@@ -39,6 +39,7 @@ CACHE_DIR=$2
 echo $PATH
 echo $BUILD_DIR
 echo $CACHE_DIR
+echo $HOME
 
 whoami
 
